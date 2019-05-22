@@ -1,8 +1,5 @@
 package xtu.bit.learner;
 
-import org.junit.Test;
-
-import javax.xml.crypto.dsig.spec.ExcC14NParameterSpec;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -84,30 +81,7 @@ public class FindJars {
     }
 
 
-    /**
-     * 打印获取的jar名
-     * @param allClass
-     */
-    public void printJarName(List<String> allClass){
-        allClass.forEach(clazz->{
-            System.out.println(clazz);
-        });
-    }
 
-    @Test
-    public void test() throws Exception{
-        List<String> allJars = new ArrayList<>();
-        getAllJars(allJars,"D:\\ideaSpace\\Retry\\retry\\target");
-        printJarName(allJars);
 
-        List<List<String>> allClass = getAllClass(allJars);
-        for(List<String> list:allClass){
-            for(String li:list){
-                System.out.println(li);
-//                Class<?> aClass = Thread.currentThread().getContextClassLoader().loadClass(li);
-//                System.out.println(aClass);
-            }
-        }
-    }
 
 }

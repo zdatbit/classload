@@ -1,9 +1,6 @@
 package xtu.bit.learner;
 
-import org.junit.Test;
-
 import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -40,24 +37,5 @@ public class FindClass {
 
     }
 
-    /**
-     * 加载的class全限定名打印出来
-     * @param stringList
-     */
-    public void printFile(List<String> stringList){
-        stringList.forEach(str->{
-            System.out.println(str);
-        });
-    }
-
-    /**
-     * 测试
-     */
-    @Test
-    public void test(){
-        List<String> str = new ArrayList<>();
-        getAllClass(str,"D:\\ideaSpace\\Retry\\retry");
-        printFile(str);
-    }
 
 }
