@@ -3,7 +3,9 @@ package xtu.bit.learner;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by zhangdi21 on 2019/5/22.
@@ -27,8 +29,10 @@ public class FindClassTest {
     @Test
     public void run(){
         FindClass findClass = new FindClass();
-        List<String> str = new ArrayList<>();
+        Map<String,String> str = new HashMap<>();
         findClass.getAllClass(str,"D:\\ideaSpace\\Retry\\retry");
-        printFile(str);
+        str.forEach((path,name)->{
+
+        });
     }
 }
