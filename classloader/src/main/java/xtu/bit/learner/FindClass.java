@@ -50,6 +50,7 @@ public class FindClass {
         if(file.isFile()){
             if(file.getName().endsWith(".class")){
                 allClass.add(file.getPath()+"\\"+file.getName());
+                System.out.println(file.getPath()+"\\"+file.getName());
             }
         }else if(file.isDirectory()){
             File[] listFiles = file.listFiles();
@@ -61,6 +62,7 @@ public class FindClass {
                     String fileName = list.getName();
                     if (fileName.endsWith(".class")) {
                         allClass.add(file.getPath()+"\\"+fileName);
+                        System.out.println(file.getPath()+"\\"+fileName);
                     }
                 }
             }
